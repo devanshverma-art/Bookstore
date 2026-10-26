@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>CSE Books Catalogue</title>
+
+    <style>
+        .catalogue-table .book-img {
+            width: 88px;
+            height: 112px;
+            object-fit: contain;
+            display: block;
+            margin: 0 auto;
+            cursor: pointer;
+        }
+
+        .catalogue-table td:first-child {
+            text-align: center;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="catalogue-container">
+        <h2>CSE Books Catalogue</h2>
+
+        <table class="catalogue-table">
+            <thead>
+                <tr>
+                    <th>Book Image</th>
+                    <th>Book Name</th>
+                    <th>Author Name</th>
+                    <th>Price</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>
+                        <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQs7EFXEOXElZSl8JgRP-fipTfb6EsZ7wbSy2dhZVDWAg&s=10"
+                           target="_blank" rel="noopener noreferrer">
+                            <img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQs7EFXEOXElZSl8JgRP-fipTfb6EsZ7wbSy2dhZVDWAg&s=10"
+                                alt="Computer Science"
+                                class="book-img">
+                        </a>
+                    </td>
+                    <td>Computer Science</td>
+                    <td>Robert Sedgewick</td>
+                    <td>Rs. 3250</td>
+                    <td><button class="cart-btn">Add to Cart</button></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLLoQGMKGav5_lR6JPa0bKThGZSSwXtYMVeNW3y4Yr0Q&s=10"
+                           target="_blank" rel="noopener noreferrer">
+                            <img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLLoQGMKGav5_lR6JPa0bKThGZSSwXtYMVeNW3y4Yr0Q&s=10"
+                                alt="Operating System Concepts"
+                                class="book-img">
+                        </a>
+                    </td>
+                    <td>Operating System Concepts</td>
+                    <td>Dr. Ikvinderpal Singh</td>
+                    <td>Rs. 2875</td>
+                    <td><button class="cart-btn">Add to Cart</button></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQD50CPYwa6Y6pLsodfoaPPkT2Hr5LVVqgOpdHb0koeYA&s=10"
+                           target="_blank" rel="noopener noreferrer">
+                            <img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQD50CPYwa6Y6pLsodfoaPPkT2Hr5LVVqgOpdHb0koeYA&s=10"
+                                alt="Database System Concepts"
+                                class="book-img">
+                        </a>
+                    </td>
+                    <td>Database System Concepts</td>
+                    <td>Abraham Silberschatz</td>
+                    <td>Rs. 3920</td>
+                    <td><button class="cart-btn">Add to Cart</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p class="note">
+            Select a category from the left panel to view more.
+        </p>
+    </div>
+</body>
+</html>

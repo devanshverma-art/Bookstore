@@ -1,0 +1,173 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Book Catalogue</title>
+
+    <style>
+        .catalogue-table .book-img {
+            width: 88px;
+            height: 112px;
+            object-fit: contain;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .catalogue-table td:first-child {
+            text-align: center;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="catalogue-container">
+
+        <h2>Book Catalogue</h2>
+
+        <table class="catalogue-table">
+            <thead>
+                <tr>
+                    <th>Book Image</th>
+                    <th>Book Name</th>
+                    <th>Author Name</th>
+                    <th>Price</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQs7EFXEOXElZSl8JgRP-fipTfb6EsZ7wbSy2dhZVDWAg&s=10"
+                             alt="Computer Science" class="book-img">
+                    </td>
+                    <td>Computer Science</td>
+                    <td>Robert Sedgewick</td>
+                    <td>Rs. 3250</td>
+                    <td><button class="cart-btn">Add to Cart</button></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLLoQGMKGav5_lR6JPa0bKThGZSSwXtYMVeNW3y4Yr0Q&s=10"
+                             alt="Operating System Concepts" class="book-img">
+                    </td>
+                    <td>Operating System Concepts</td>
+                    <td>Dr. Ikvinderpal Singh</td>
+                    <td>Rs. 2875</td>
+                    <td><button class="cart-btn">Add to Cart</button></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQD50CPYwa6Y6pLsodfoaPPkT2Hr5LVVqgOpdHb0koeYA&s=10"
+                             alt="Database System Concepts" class="book-img">
+                    </td>
+                    <td>Database System Concepts</td>
+                    <td>Abraham silberschatz</td>
+                    <td>Rs. 3920</td>
+                    <td><button class="cart-btn">Add to Cart</button></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQao4Jefb3JpFERarmtGAvc2ftFPyHpd4wNb8ZHlS3zUw&s"
+                             alt="Basic Mechanical Engineering" class="book-img">
+                    </td>
+                    <td>Basic Mechanical Engg.</td>
+                    <td>Basant Agarwal</td>
+                    <td>Rs. 2490</td>
+                    <td><button class="cart-btn">Add to Cart</button></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPoG0CwM5HzC_APGOEVgH4bEJMOINuAstBl6H9oK8lew&s=10"
+                             alt="Thermodynamics" class="book-img">
+                    </td>
+                    <td>Thermodynamics</td>
+                    <td>Yunus A. Sangel</td>
+                    <td>Rs. 3120</td>
+                    <td><button class="cart-btn">Add to Cart</button></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ29qRnv3Sy7uYDSaYvsxcwNyDasvRMzDxy2N2sUPYTTg&s"
+                             alt="Fluid Mechanics" class="book-img">
+                    </td>
+                    <td>Fluid Mechanics</td>
+                    <td>C S. Jog</td>
+                    <td>Rs. 2640</td>
+                    <td><button class="cart-btn">Add to Cart</button></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsbedOHZJw-NO3GI6AsCriLZZXDeHiXT5kgo4iFAUNYg&s=10"
+                             alt="ECE" class="book-img">
+                    </td>
+                    <td>ECE</td>
+                    <td>Arihant</td>
+                    <td>Rs. 2990</td>
+                    <td><button class="cart-btn">Add to Cart</button></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUrYnLcxaG5YhXcMUmQg2fjPTSZMUBxxhgpJbhpW1h0w&s"
+                             alt="Digital Electronics" class="book-img">
+                    </td>
+                    <td>Digital Electronics</td>
+                    <td>Rishab Anand</td>
+                    <td>Rs. 3780</td>
+                    <td><button class="cart-btn">Add to Cart</button></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbKk7EkHrCky-Hjoy85jiun4y3JHlLjmM6kx6ODVjZQQ&s=10"
+                             alt="Signal and Systems" class="book-img">
+                    </td>
+                    <td>Signal and systems</td>
+                    <td>Tarun Kumar Rawat</td>
+                    <td>Rs. 3315</td>
+                    <td><button class="cart-btn">Add to Cart</button></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPoOK-vjXN1IIZLvcfNEQp5OAzNN3CVsoECt5TLeYzCw&s=10"
+                             alt="Communication Engineering" class="book-img">
+                    </td>
+                    <td>Communicational Engineering</td>
+                    <td>U.A Bakshi</td>
+                    <td>Rs. 2865</td>
+                    <td><button class="cart-btn">Add to Cart</button></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7rYQ_y-tRLm3edki7P7CoflK9jrue2CTzn7HOkhPztA&s=10"
+                             alt="Artificial Intelligence" class="book-img">
+                    </td>
+                    <td>Artificial Intelligence</td>
+                    <td>Charu C. Agarwal</td>
+                    <td>Rs. 3950</td>
+                    <td><button class="cart-btn">Add to Cart</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p class="note">
+            Select a category from the left panel to view more.
+        </p>
+
+    </div>
+</body>
+</html>

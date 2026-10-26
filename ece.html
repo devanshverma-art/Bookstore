@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>ECE Books Catalogue</title>
+
+    <style>
+        .catalogue-table .book-img {
+            width: 88px;
+            height: 112px;
+            object-fit: contain;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .catalogue-table td:first-child {
+            text-align: center;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="catalogue-container">
+        <h2>ECE Books Catalogue</h2>
+
+        <table class="catalogue-table">
+            <thead>
+                <tr>
+                    <th>Book Image</th>
+                    <th>Book Name</th>
+                    <th>Author Name</th>
+                    <th>Price</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUrYnLcxaG5YhXcMUmQg2fjPTSZMUBxxhgpJbhpW1h0w&s"
+                            alt="Digital Electronics"
+                            class="book-img">
+                    </td>
+                    <td>Digital Electronics</td>
+                    <td>Rishab Anand</td>
+                    <td>Rs. 3780</td>
+                    <td><button class="cart-btn">Add to Cart</button></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbKk7EkHrCky-Hjoy85jiun4y3JHlLjmM6kx6ODVjZQQ&s=10"
+                            alt="Signal and Systems"
+                            class="book-img">
+                    </td>
+                    <td>Signal and systems</td>
+                    <td>Tarun Kumar Rawat</td>
+                    <td>Rs. 3315</td>
+                    <td><button class="cart-btn">Add to Cart</button></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPoOK-vjXN1IIZLvcfNEQp5OAzNN3CVsoECt5TLeYzCw&s=10"
+                            alt="Communication Engineering"
+                            class="book-img">
+                    </td>
+                    <td>Communicational Engineering</td>
+                    <td>U.A Bakshi</td>
+                    <td>Rs. 2865</td>
+                    <td><button class="cart-btn">Add to Cart</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p class="note">
+            Select a category from the left panel to view more.
+        </p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Mechanical Books Catalogue</title>
+
+    <style>
+        .catalogue-table .book-img {
+            width: 88px;
+            height: 112px;
+            object-fit: contain;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .catalogue-table td:first-child {
+            text-align: center;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="catalogue-container">
+        <h2>Mechanical Books Catalogue</h2>
+
+        <table class="catalogue-table">
+            <thead>
+                <tr>
+                    <th>Book Image</th>
+                    <th>Book Name</th>
+                    <th>Author Name</th>
+                    <th>Price</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQao4Jefb3JpFERarmtGAvc2ftFPyHpd4wNb8ZHlS3zUw&s"
+                            alt="Basic Mechanical Engineering"
+                            class="book-img">
+                    </td>
+                    <td>Basic Mechanical Engg.</td>
+                    <td>Basant Agarwal</td>
+                    <td>Rs. 2490</td>
+                    <td><button class="cart-btn">Add to Cart</button></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPoG0CwM5HzC_APGOEVgH4bEJMOINuAstBl6H9oK8lew&s=10"
+                            alt="Thermodynamics"
+                            class="book-img">
+                    </td>
+                    <td>Thermodynamics</td>
+                    <td>Yunus A. Sangel</td>
+                    <td>Rs. 3120</td>
+                    <td><button class="cart-btn">Add to Cart</button></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ29qRnv3Sy7uYDSaYvsxcwNyDasvRMzDxy2N2sUPYTTg&s"
+                            alt="Fluid Mechanics"
+                            class="book-img">
+                    </td>
+                    <td>Fluid Mechanics</td>
+                    <td>C S. Jog</td>
+                    <td>Rs. 2640</td>
+                    <td><button class="cart-btn">Add to Cart</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p class="note">
+            Select a category from the left panel to view more.
+        </p>
+    </div>
+</body>
+</html>
