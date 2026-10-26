@@ -1,0 +1,105 @@
+📚 G.L. Bajaj Online Book Store
+A simple bookstore website made using HTML and CSS, designed to help students browse books from different engineering branches.
+About the Project
+The idea behind this project is to bring different engineering books together in one place. Instead of searching through separate pages, a visitor can open the bookstore, choose a category, and view the available books along with their authors and prices.
+
+The website is built mainly with HTML for the page structure and CSS for the design. It is a front-end project, so the current version focuses on how the website looks and how its pages are connected. Features such as real login, registration, and cart processing would need additional programming.
+What Can You Find Here?
+- Home page: Welcomes visitors and briefly explains how to browse the bookstore.
+- Top navigation: Provides links to Home, Login, Register, Catalogue, and Cart.
+- Category menu: Lets visitors open the CSE, ECE, and Mechanical book lists.
+- Book catalogues: Show book covers, names, authors, prices, and an “Add to Cart” button.
+- Login page: Contains fields for a username and password.
+- Registration page: Includes fields for details such as name, email, mobile number, password, gender, date of birth, languages, and address.
+- Cart page: Shows sample books, quantities, remove buttons, and a displayed total.
+- Shared styling: Keeps the pages visually consistent through colours, tables, buttons, forms, and layout styles.
+Project Files
+File	What it does
+index(1).html	Sets up the main page layout using frames.
+top.html	Displays the bookstore logo, title, and top navigation links.
+left.html	Contains the sidebar links for CSE, ECE, and Mechanical books.
+right.html	Shows the welcome message in the main content area when the site opens.
+footer.html	Displays the creator credit and roll number.
+home.html	Contains the bookstore welcome message and a short introduction.
+catalogue.html	Lists books from several engineering subjects in one table.
+cse.html	Displays the Computer Science book catalogue.
+ece.html	Displays the Electronics and Communication book catalogue.
+mech.html	Displays the Mechanical Engineering book catalogue.
+cart.html	Shows example cart items, quantities, actions, and a total price.
+login.html	Provides the basic login form.
+register.html	Provides the registration form.
+style.css	Contains shared styles for the sidebar, content, tables, forms, buttons, and footer.
+
+
+How the Pages Connect
+The main layout is divided into three parts:
+1. Header: Loads top.html and keeps the title and navigation at the top.
+2. Main area: Splits into a left sidebar and a larger content panel.
+3. Footer: Loads footer.html at the bottom of the page.
+The top navigation opens the Home, Login, Register, Catalogue, and Cart pages in the main content frame. The sidebar opens the separate CSE, ECE, and Mechanical catalogues in that same area. This lets the visitor move between sections without replacing the whole layout each time.
+
+The catalogue pages use tables to keep each books image, title, author, price, and action together in one row. The book-cover images currently come from external image links, so they may need an internet connection to display.
+Design Choices
+I kept the design straightforward so that the pages are easy to understand and use. The site combines a dark blue-grey header and sidebar with blue buttons and table headings. White content areas help the book information stand out, while spacing, borders, and hover effects make the tables easier to scan.
+
+The main styles are stored in style.css, which helps maintain a consistent look across the pages. A few catalogue pages also include small CSS rules of their own to size and align book images. The header has its own styling, including a media query that adjusts its layout on narrower screens.
+Book Catalogue and Cart
+The main catalogue brings together books from CSE, Mechanical, and ECE subjects, along with an Artificial Intelligence title. The separate category pages show a smaller selection for each branch.
+
+The cart page currently contains two sample entries: Computer Science and Artificial Intelligence. It shows quantities of 2 and 1 and displays a total of Rs. 13,000. At this stage, the quantity, remove, and checkout controls are only part of the interface; the total is written into the page rather than calculated automatically.
+How to Run the Project
+1. Keep the HTML files and style.css in the same project folder.
+2. Open that folder in Visual Studio Code.
+3. Check that the filenames in the links match the actual files.
+4. Open the intended main HTML file in a browser.
+5. Use the navigation links and category menu to explore the pages.
+Before publishing: the uploaded main file is named index(1).html. For GitHub Pages to automatically use it as the site's entry page, it will generally need to be named index.html. Check that it is the correct main file before renaming it.
+What Could Be Improved Next?
+This project is a starting point for a bookstore website. A few useful next steps would be:
+- Make the “Add to Cart”, quantity, remove, and checkout buttons work using JavaScript.
+- Calculate the cart total from the selected books and quantities.
+- Add proper validation to the registration form, including checking that both password fields match.
+- Connect login and registration to a secure back end if real accounts are needed.
+- Store book information in a database and keep cart contents between visits.
+- Save book images in the project folder instead of relying entirely on external links.
+- Improve accessibility with clearer form labels and keyboard-friendly controls.
+- Replace the older frameset layout with a modern responsive layout using CSS Flexbox or Grid.
+A real login system would also need secure server-side authentication; a front-end form by itself does not protect user accounts.
+Small Code Blocks Explained
+Here are five short examples from the project and what each one does.
+1. Dividing the Main Page into Frames — index(1).html
+<frameset rows="20%,*,7%">
+    <frame src="top.html" name="topFrame" scrolling="no" noresize>
+    <frameset cols="25%,*">
+        <frame src="left.html" name="leftFrame">
+        <frame src="right.html" name="rightFrame">
+    </frameset>
+    <frame src="footer.html" name="footerFrame" scrolling="no" noresize>
+</frameset>
+Explanation: This code divides the browser page into a top section, a main section, and a footer. The main section is split again into a sidebar and a content area. Each frame loads a separate HTML file, which is how the website keeps its navigation and footer in place while the main content changes. This project uses the older frameset approach.
+2. Opening a Category in the Main Area — left.html
+<li><a href="cse.html" target="rightFrame">CSE Books</a></li>
+Explanation: The <a> tag creates a clickable link to cse.html. The target="rightFrame" part tells the browser to load that page in the frame named rightFrame, instead of replacing the whole website layout. The same pattern is used for the ECE and Mechanical category links.
+3. Showing a Book in the Catalogue — catalogue.html
+<img src="BOOK_IMAGE_URL"
+     alt="Computer Science"
+     class="book-img">
+
+Explanation: The <img> tag displays the book-cover image. The src attribute contains the image address, while alt provides alternative text if the image cannot be seen or loaded. The class="book-img" connects the image to CSS rules that control its size and appearance. In the actual file, BOOK_IMAGE_URL is replaced with the full image URL.
+4. Styling the Catalogue Table — style.css
+.catalogue-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+Explanation: This CSS makes the catalogue table fill the available width of its container. border-collapse: collapse combines neighbouring table borders into a cleaner grid, and background: white gives the table a plain background so the book information is easy to read.
+5. Creating a Required Registration Field — register.html
+<input type="email" placeholder="Email" required>
+Explanation: This input lets the visitor enter an email address. The type="email" attribute asks the browser to check that the entered value has an email-like format, and placeholder displays a hint inside the field. The required attribute prevents the form from being submitted while this field is empty. This is basic browser-side validation, not a complete account-registration system.
+Conclusion
+The G.L. Bajaj Online Book Store brings together the basic parts of a multi-page website: navigation, category links, book tables, forms, images, and shared styling. It is a practical way to demonstrate how HTML and CSS can work together to organise a small website.
+
+The current version focuses on the interface and page navigation. Adding working cart behaviour, form processing, data storage, and a more modern layout would be the natural next steps toward making it a fully functional online bookstore.
+Created by: Devansh Verma
+Project: G.L. Bajaj Online Book Store
+Technologies used: HTML and CSS
