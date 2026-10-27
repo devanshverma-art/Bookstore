@@ -1,10 +1,9 @@
-📚 G.L. Bajaj Online Book Store
+ G.L. Bajaj Online Book Store
 A simple bookstore website made using HTML and CSS, designed to help students browse books from different engineering branches.
 About the Project
 The idea behind this project is to bring different engineering books together in one place. Instead of searching through separate pages, a visitor can open the bookstore, choose a category, and view the available books along with their authors and prices.
 
-The website is built mainly with HTML for the page structure and CSS for the design. It is a front-end project, so the current version focuses on how the website looks and how its pages are connected. Features such as real login, registration, and cart processing would need additional programming.
-What Can You Find Here?
+The website is built mainly with HTML for the page structure and CSS for the design.
 - Home page: Welcomes visitors and briefly explains how to browse the bookstore.
 - Top navigation: Provides links to Home, Login, Register, Catalogue, and Cart.
 - Category menu: Lets visitors open the CSE, ECE, and Mechanical book lists.
@@ -14,21 +13,21 @@ What Can You Find Here?
 - Cart page: Shows sample books, quantities, remove buttons, and a displayed total.
 - Shared styling: Keeps the pages visually consistent through colours, tables, buttons, forms, and layout styles.
 Project Files
-File	What it does
-index(1).html	Sets up the main page layout using frames.
-top.html	Displays the bookstore logo, title, and top navigation links.
-left.html	Contains the sidebar links for CSE, ECE, and Mechanical books.
-right.html	Shows the welcome message in the main content area when the site opens.
-footer.html	Displays the creator credit and roll number.
-home.html	Contains the bookstore welcome message and a short introduction.
-catalogue.html	Lists books from several engineering subjects in one table.
-cse.html	Displays the Computer Science book catalogue.
-ece.html	Displays the Electronics and Communication book catalogue.
-mech.html	Displays the Mechanical Engineering book catalogue.
-cart.html	Shows example cart items, quantities, actions, and a total price.
-login.html	Provides the basic login form.
-register.html	Provides the registration form.
-style.css	Contains shared styles for the sidebar, content, tables, forms, buttons, and footer.
+File:	         What it does:
+index.html	     Sets up the main page layout using frames.
+top.html	     Displays the bookstore logo, title, and top navigation links.
+left.html	     Contains the sidebar links for CSE, ECE, and Mechanical books.
+right.html       Shows the welcome message in the main content area when the site opens.
+footer.html	     Displays the creator credit and roll number.
+home.html	     Contains the bookstore welcome message and a short introduction.
+catalogue.html	 Lists books from several engineering subjects in one table.
+cse.html	     Displays the Computer Science book catalogue.
+ece.html	     Displays the Electronics and Communication book catalogue.
+mech.html  	     Displays the Mechanical Engineering book catalogue.
+cart.html	     Shows example cart items, quantities, actions, and a total price.
+login.html	     Provides the basic login form.
+register.html	 Provides the registration form.
+style.css	     Contains shared styles for the sidebar, content, tables, forms, buttons, and footer.
 
 
 How the Pages Connect
@@ -96,10 +95,7 @@ Explanation: This CSS makes the catalogue table fill the available width of its 
 5. Creating a Required Registration Field — register.html
 <input type="email" placeholder="Email" required>
 Explanation: This input lets the visitor enter an email address. The type="email" attribute asks the browser to check that the entered value has an email-like format, and placeholder displays a hint inside the field. The required attribute prevents the form from being submitted while this field is empty. This is basic browser-side validation, not a complete account-registration system.
-Conclusion
-The G.L. Bajaj Online Book Store brings together the basic parts of a multi-page website: navigation, category links, book tables, forms, images, and shared styling. It is a practical way to demonstrate how HTML and CSS can work together to organise a small website.
 
-The current version focuses on the interface and page navigation. Adding working cart behaviour, form processing, data storage, and a more modern layout would be the natural next steps toward making it a fully functional online bookstore.
 Created by: Devansh Verma
 Project: G.L. Bajaj Online Book Store
 Technologies used: HTML and CSS
